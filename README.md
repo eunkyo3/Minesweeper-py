@@ -16,10 +16,17 @@
 \*4\*31
 # 나의 풀이
 ```python
+# 가로 세로 크기를 입력받음
 col, row = map(int, input().split())
+
+# 빈 리스트 생성
 matrix = []
+
+# 2차원 리스트 생성
 for i in range(row):
     matrix.append(list(input()))
+    
+# 지뢰 제조 공장 (설명 나중에 귀찮;)
 for i in range(row):
     for j in range(col):
         cnt = 0
